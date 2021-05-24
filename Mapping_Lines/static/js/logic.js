@@ -19,8 +19,6 @@ function circleMarkers(city){
         {
             radius: city.population/200000,
             color: 'orange',
-            dashArray: '20, 20', 
-            dashOffset: '20',
             weight: 4,
             fillColor: 'orange'
         })
@@ -30,7 +28,7 @@ function circleMarkers(city){
 let flightRoute = L.polyline(lineCoords, {
     color: 'blue',
     weight: 4,
-
+    dashArray: '5,10',
     opacity: 0.5
 });
 
